@@ -1,0 +1,46 @@
+name: Build J-47 MK2 (Windows + macOS)
+on:
+  push:
+  workflow_dispatch:
+jobs:
+  build:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [windows-latest, macos-latest]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Configure
+        shell: bash
+        run: |
+          src=$(dirname "$(find . -name CMakeLists.txt -not -path './build/*' | awk '{ print length, $0 }' | sort -n | head -1 | cut -d' ' -f2-)")
+          echo "CMakeLists.txt trovato in: $src"
+          cmake -S "$src" -B build -DCMAKE_BUILD_TYPE=Release "-DCMAKE_OSX_ARCHITECTURES=arm64;x86_64"
+
+      - name: Build
+        run: cmake --build build --config Release --parallel
+
+      - name: Firma locale (macOS)
+        if: runner.os == 'macOS'
+        shell: bash
+        run: |
+          codesign --force --deep -s - "build/MeteoraTape_artefacts/Release/VST3/J-47 MK2.vst3"
+          codesign --force --deep -s - "build/MeteoraTape_artefacts/Release/AU/J-47 MK2.component"
+
+      - name: Upload Windows
+        if: runner.os == 'Windows'
+        uses: actions/upload-artifact@v4
+        with:
+          name: J-47-MK2-Windows-VST3
+          path: build/MeteoraTape_artefacts/Release/VST3
+
+      - name: Upload macOS
+        if: runner.os == 'macOS'
+        uses: actions/upload-artifact@v4
+        with:
+          name: J-47-MK2-macOS-VST3-AU
+          path: |
+            build/MeteoraTape_artefacts/Release/VST3
+            build/MeteoraTape_artefacts/Release/AU
