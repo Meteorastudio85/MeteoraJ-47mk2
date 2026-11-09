@@ -1,0 +1,42 @@
+J-47 MK2 - LICENZA D'USO (EULA)
+Copyright (c) 2026 Meteora Plugins. Tutti i diritti riservati.
+
+Il plugin "J-47 MK2" di Meteora Plugins (il "Software"), comprese la grafica, il codice sorgente scritto da Meteora Plugins
+e la documentazione, e' di proprieta' di Meteora Plugins. Installando o usando il Software accetti questa licenza.
+
+1. LICENZA CONCESSA
+   Meteora Plugins ti concede una licenza personale, non esclusiva e non trasferibile per installare e usare
+   il Software sui computer di tua proprieta' o sotto il tuo controllo.
+
+2. LE TUE PRODUZIONI
+   Puoi usare il Software per produzioni musicali e audio personali e commerciali. Le registrazioni, i mix e
+   i master che crei con il Software sono tuoi: non sono dovuti compensi o crediti a Meteora Plugins.
+
+3. COSA NON E' PERMESSO
+   Senza un permesso scritto di Meteora Plugins non puoi:
+   a) vendere, noleggiare, prestare, cedere o ridistribuire il Software, anche gratuitamente;
+   b) modificare, decompilare o disassemblare il Software, salvo quanto permesso dalla legge;
+   c) togliere o cambiare questa licenza, i nomi, i marchi o le note di copyright;
+   d) usare la grafica, il logo o il nome "Meteora Plugins" in altri prodotti.
+
+4. COMPONENTI DI TERZE PARTI
+   Il Software contiene componenti di terze parti che restano soggetti alle loro licenze, elencate in
+   THIRD_PARTY_NOTICES.txt (algoritmi Airwindows con licenza MIT, framework JUCE). Per quei componenti
+   valgono le rispettive licenze, che prevalgono su questa dove necessario.
+
+5. NESSUNA GARANZIA
+   Il Software e' fornito "cosi' com'e'", senza garanzie di alcun tipo, esplicite o implicite, comprese quelle
+   di commerciabilita', idoneita' a uno scopo particolare e assenza di errori.
+
+6. LIMITAZIONE DI RESPONSABILITA'
+   Nei limiti consentiti dalla legge, Meteora Plugins non e' responsabile di danni diretti o indiretti,
+   perdita di dati, di lavoro o di guadagni derivanti dall'uso o dall'impossibilita' di usare il Software.
+
+7. DURATA
+   La licenza vale finche' la rispetti. Se ne violi i termini termina automaticamente e devi smettere di usare
+   il Software e cancellarne tutte le copie.
+
+8. LEGGE APPLICABILE
+   Questa licenza e' regolata dalla legge italiana.
+
+Meteora Plugins
